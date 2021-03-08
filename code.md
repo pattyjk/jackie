@@ -1,3 +1,4 @@
+```
 #install BlandAltman package & ggplot
 install.packages("BlandAltmanLeh")
 install.packages("ggplot2")
@@ -24,11 +25,5 @@ bland.altman.stats(new_data$E_SOL_minutes, new_data$ACT_Onset_Latency, two=1.96,
 #write data frame to file
 write.csv(new_data, 'jaque_merged.csv', row.names=F)
 
-#Check string length
-str(ACT_Onset_LatencyNum)
-str(E_SOL_minutesNum)
 
-#Calculate BlandAltman stats for SOL
-bland.altman.stats(ACT_Onset_Latency, E_SOL_minutes, two=1.96, mode=1, conf.int=0.95)
-print(bland.altman.stats(ACT_Onset_Latency, E_SOL_minutes))
-print(bland.altman.stats(ACT_Onset_Latency, E_SOL_minutes)$critical.diff)
+```
